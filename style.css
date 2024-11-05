@@ -1,0 +1,230 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@font-face {
+  font-family: sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+body{
+    font-size: 16px;
+    font-family: "poppins",  sans-serif;
+    min-height: 100vh;
+}
+
+header{
+  background-color: rgb(14, 14, 14);
+  height: 15vh;
+  padding: 1.9rem;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem; */
+    /* background-color: khaki; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    text-decoration: none;
+    
+    /* padding-left: 6rem; */
+    /* background-color: blue; */
+}
+.navbar a{
+   
+    position: relative;
+    text-decoration: none;
+    color: pink;
+}
+.navbar a::after{
+  content: '';
+  position: absolute;
+
+  background-color: white;
+  left: 0;
+  bottom: 1px;
+  z-index: -1px;
+  transition: all;
+
+}
+.navbar a:hover::after{
+  width: 100%;
+  height: 3px;
+  background: pink;
+  
+}
+.logo, h1{
+    color: pink;
+    cursor: pointer;
+    font-size: 1.2em;
+
+}
+.btn{
+    /* height: 20px;
+    width: 50px; */
+    padding: 10px;
+    margin: 0;
+    border-radius: 2rem;
+    background-color: pink;
+    border: none;
+}
+.btn:hover{
+    text-decoration:none;
+    color: #fff;
+    background-color: rgb(217, 50, 78);
+}
+ .about{
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: pink;
+}
+.hero{
+    display: flex;
+    /* background-color:khaki ; */
+    
+
+}
+.hero-1{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 16px;
+    align-items: center;
+    margin: auto;
+    /* background-color: black; */
+}
+.hero img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+    /* background-color: red; */
+}
+ .hero .aboutimage{
+    font-size: 100px;
+    color: pink;
+ }
+ .hero .abouttext{
+    font-size: 50px;
+    color: #333;
+ }
+ .hero .hreo-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .hero .abouttextandimage{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 16px;
+ }
+ .abouttextandimage{
+    display: flex;
+    flex-wrap: wrap;
+  
+
+ }
+ /* .card{
+  display: grid;
+  padding: 16px;
+  margin: 2rem;
+  background-color: pink;
+  grid-template-rows:repeat(3, 1fr);
+ } */
+
+
+ img{
+  width: 100%;
+ }
+    
+ .cardclass{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: rgb(250, 243, 179);
+  height: 80vh;
+  padding: 0 0 0 16px;
+
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+    height: 60vh;
+    padding: 16px;
+    margin: 1rem;
+    gap: 1rem;
+    background-color: #fff;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+    justify-content: space-around;
+    
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4px 16px;
+    margin: auto;
+    margin-top: 4rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: pink;
+    /* background-color: pink; */
+  }
+  
+  .footer h3{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: pink;
+  }
+ .footer h3{
+     text-align: center;
+     font-size: 2em;
+     font-weight: 600;
+     margin-top: 30px;
+     letter-spacing: 2px;
+     margin-bottom: 20px;
+  
+ }
+ .footer-1{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin-left: 70px;
+ margin-right: 70px;
+ margin-bottom: 20px;
+  
+ }
+ .footer-1 a{
+  text-decoration: none;
+  color: rgb(244, 149, 165);
+  font-family: sans-serif;
+
+ }
+ .footer-1 a:hover{
+  text-decoration: underline;
+  color: #333;
+ }
